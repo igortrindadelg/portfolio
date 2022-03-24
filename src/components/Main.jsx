@@ -1,19 +1,22 @@
 import React from 'react'
 
 import '../scss/Main.scss'
-import igor from '../assets/igor.jpeg'
+import avatar from '../assets/avatar.png'
 
 const Main = () => {
     return ( 
         <div className="mainContainer">
             <div className="mainText">
-                <h2>Front-end
-                    <p>Dev</p>
+                <h2 className='dev'>
+                    I'm, Igor Trindade
+                    <p>Front-end Developer</p>
                 </h2>
+                
+                <p className='description'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta aliquid eligendi sint quos sed possimus reprehenderit incidunt illum expedita maiores. </p>
             </div>
 
             <div className="mainImage">
-                <img src={igor} alt="" />
+                <img src={avatar} alt="" />
             </div>
         </div>
      )
