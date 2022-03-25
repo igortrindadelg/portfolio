@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 .mainContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;    
@@ -13,12 +15,17 @@
     max-width: 100%;
     align-items: center;
     justify-items: center;
-    padding-top: 3rem;
+    text-transform: uppercase;
 
-    .dev {
+    .bigText {
+        padding: 0 2rem;
         padding-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-size: 1.6rem;
+        font-weight: 400;
+
+        .bigTextGreen {
+            color: $primaryColor;
+        }
     }
 
     .description {
@@ -44,6 +51,10 @@
 }
 
 @media (max-width: 820px) {
+    .mainText {
+        padding-top: 3rem;
+    }
+    
     .mainContainer {
         grid-template-columns: 1fr;
         padding-top: 10vh;
