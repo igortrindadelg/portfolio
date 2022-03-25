@@ -18,7 +18,18 @@ const Main = () => {
                 <p className='description'>Let's build something incrediable together! </p>
 
                 <div className="iconsContainer">
-                    <box-icon type='logo' name='github'></box-icon>
+                    <button className="iconsButton">
+                        <box-icon name='github' type='logo' color='#ffffff' ></box-icon>
+                    </button>
+                    
+                    <button className="iconsButton">
+                        <box-icon name='linkedin-square' type='logo' color='#ffffff' ></box-icon> 
+                    </button>
+
+                    <button className="iconsButton">
+                        <box-icon name='whatsapp' type='logo' color='#ffffff' ></box-icon>
+                    </button>
+
                 </div>
             </div>
 
