@@ -15,19 +15,19 @@ const Main = () => {
                     </span></p>
                 </h2>
                 
-                <p className='description'>Let's build something incrediable together! </p>
+                <p className='description'>Let's build something incredible together! </p>
 
                 <div className="iconsContainer">
                     <button className="iconsButton">
-                        <box-icon name='github' type='logo' color='#ffffff' ></box-icon>
+                        <box-icon name='github' type='logo' color='#000' ></box-icon>
                     </button>
                     
                     <button className="iconsButton">
-                        <box-icon name='linkedin-square' type='logo' color='#ffffff' ></box-icon> 
+                        <box-icon name='linkedin-square' type='logo' color='#000' ></box-icon> 
                     </button>
 
                     <button className="iconsButton">
-                        <box-icon name='whatsapp' type='logo' color='#ffffff' ></box-icon>
+                        <box-icon type='logo' name='whatsapp' ></box-icon>
                     </button>
 
                 </div>

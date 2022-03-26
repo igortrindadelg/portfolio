@@ -20,7 +20,7 @@ const Header = () => {
     return (
         <nav className='navbar'>
             <div className="logo">
-                <h2>Igor Trindade.dev</h2>
+                <h2>{'<IGOR.DEV />'}</h2>
             </div>
 
             <ul className={active}>

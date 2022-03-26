@@ -4,7 +4,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;    
     align-items: center;
-    // text-align: center;
     min-height: 100%;
     max-width: 100%;
 }
@@ -15,9 +14,9 @@
     max-width: 100%;
     align-items: center;
     justify-items: center;
-    text-transform: uppercase;
 
     .bigText {
+        text-transform: uppercase;
         padding: 0 2rem;
         padding-bottom: 1rem;
         font-size: 1.6rem;
@@ -39,8 +38,7 @@
         display: grid;
         grid-auto-flow: column;
         max-width: 100%;
-        padding: 0 1rem;
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         grid-gap: 0.5rem;
 
         .iconsButton {
