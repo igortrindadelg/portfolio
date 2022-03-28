@@ -19,15 +19,18 @@ const Main = () => {
 
                 <div className="iconsContainer">
                     <button className="iconsButton">
-                        <box-icon name='github' type='logo' color='#000' ></box-icon>
+                        <i class='bx bxl-github'
+                        title='GitHub' ></i>
                     </button>
                     
                     <button className="iconsButton">
-                        <box-icon name='linkedin-square' type='logo' color='#000' ></box-icon> 
+                        <i class='bx bxl-linkedin-square'
+                        title='Linkedin' ></i>
                     </button>
 
                     <button className="iconsButton">
-                        <box-icon type='logo' name='whatsapp' ></box-icon>
+                        <i class='bx bxl-whatsapp'
+                        title='WhatsApp' ></i>
                     </button>
 
                 </div>
