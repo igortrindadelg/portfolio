@@ -55,8 +55,9 @@ const Services = () => {
                 </ul>
             </div>
 
+
             <div className="skillsContainer">
-                <h2 className='skillsTitle'>Skills</h2>
+                <h2 className='skillsTitle'>My Skills:</h2>
 
                 <div className="listContainer">
 
@@ -75,7 +76,7 @@ const Services = () => {
                     )
                 }
                 </div>
-            </div>            
+            </div>         
         </div>
      )
 }

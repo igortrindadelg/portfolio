@@ -1,0 +1,43 @@
+@import '../scss/colors.scss';
+
+.containerProjects {
+    display: grid;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.projectsTitle {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.projectsContainer {
+    max-width: 100%;
+    background-color: $secondaryColor;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 2rem;
+}
+
+.projectContainer {
+    background-color: $primaryColor;
+    height: 400px;
+    width: 400px;
+}
+
+@media (max-width: 820px) {
+    .projectsContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .projctContainer {
+        width: 250px;
+        height: 250px;
+    }
+}
