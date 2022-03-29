@@ -3,6 +3,7 @@ import 'boxicons'
 
 import '../scss/Main.scss'
 import avatar from '../assets/avatar.png'
+import SocialLinks from './SocialLinks'
 
 const Main = () => {
     const socialLinks = {
@@ -23,29 +24,8 @@ const Main = () => {
                 
                 <p className='description'>Let's build something incredible together! </p>
 
-                <div className="iconsContainer">
-                    <a href={socialLinks.github}
-                    target='_blank' 
-                    className="iconsButton">
-                        <i class='bx bxl-github'
-                        title='GitHub' ></i>
-                    </a>
-                    
-                    <a href={socialLinks.linkedin}
-                    target='_blank'
-                    className="iconsButton">
-                        <i class='bx bxl-linkedin-square'
-                        title='Linkedin' ></i>
-                    </a>
+                <SocialLinks />
 
-                    <a href={socialLinks.whatsapp}
-                    target="_blank"
-                    className="iconsButton">
-                        <i class='bx bxl-whatsapp'
-                        title='WhatsApp' ></i>
-                    </a>
-
-                </div>
             </div>
 
             <div className="mainImage">

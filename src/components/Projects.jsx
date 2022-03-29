@@ -10,16 +10,19 @@ const Projects = () => {
 
             <div className="projectsContainer">
                 <div className="projectContainer">
-
+                    <h2>New projects will be add soon...</h2>
                 </div>
-                <div className="projectContainer">
 
-                </div>
                 <div className="projectContainer">
+                    <h2>New projects will be add soon...</h2>
+                </div>
+
+                <div className="projectContainer"> 
+                    <h2>New projects will be add soon...</h2>
+                </div>
+
             </div>
             
-        </div>
-
         </div>
      )
 }

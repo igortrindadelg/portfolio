@@ -3,19 +3,22 @@ import React from 'react'
 import '../scss/About.scss'
 import Igor from '../assets/igor.jpeg'
 import Contact from './Contact'
+import SocialLinks from './SocialLinks'
 
 const About = () => {
     return (
         <div className="containerAbout">
 
             <div className="aboutMeContainer">
-                <h2 className='title'>
-                    About Me</h2>
-                    
+  
                 <img src={Igor} alt="" className='aboutMeImage'/>
 
+                <h2 className='title'>
+                    About Me</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque tempore atque facere esse voluptates, saepe quaerat quae voluptatum, iste accusamus quibusdam, aliquam dolorem error repudiandae in temporibus cupiditate vitae earum.</p>
+                <p>Hi, I'm Igor Trindade :) Besides being a front-end dev, I'm a 26 year old cinephile who lives in Florianópolis - Brazil, with my boyfriend and our cute pug. Currently I'm focused on always improving my skills as a front-end developer and I would love to help you with your project.</p>
+
+                <SocialLinks />
 
             </div>
 

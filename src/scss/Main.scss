@@ -33,35 +33,6 @@
         padding: 0 1rem;
         font-weight: 200;
     }
-
-    .iconsContainer {
-        display: grid;
-        grid-auto-flow: column;
-        max-width: 100%;
-        padding-top: 1rem;
-        grid-gap: 0.5rem;
-
-        .iconsButton {
-            text-decoration: none;
-            cursor: pointer;
-            display: grid;
-            grid-auto-flow: column;
-            grid-gap: 0.5rem;
-            font-size: 1rem;
-            background-color: $primaryColor;
-            color: black;
-            border: none;
-            border-radius: 20px;
-            padding: 0.7rem ;
-
-            i { 
-                display: grid;
-                grid-auto-flow: column;
-                align-items: center;
-                font-size: 2.5rem;
-            }
-        }
-    }
 }
 
 .mainImage {

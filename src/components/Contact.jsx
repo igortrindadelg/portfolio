@@ -7,19 +7,31 @@ const Contact = () => {
         <div className="contactContainer">
             <h2>Contact</h2>
 
-            <p>Your name: </p> 
-            <input type="text" name="name" id="" />
+            <form action="https://formsubmit.co/igortrindadelg@gmail.com" 
+            target='_blank'
+            method="post">
 
-            <p>Your best e-mail:
-            </p><input type="email" name="email" id="" />
+                <p>Your name: </p> 
+                <input type="text" name="name" required />
+
+                <p>Your best e-mail:
+                </p><input type="email" name="email" required />
+                
+
+                <p>How can I help you? (subject)</p>
+                <input type="text" name="_subject" required />
             
 
-            <p>How can I help you?</p>
-            <input type="text" name="subject" id="" />
-           
+                <p>Message:</p>
+                <textarea className='message' name='message' required id="" />
 
-            <p>Message:</p>
-            <textarea className='message' id="" />
+                <input type="hidden" name="_captcha" value="false"></input>
+
+                <input type="hidden" name="_next" value="http://localhost:3000" />
+
+                <p className="buttonContainer"><button className='buttonSubmit' type="submit">Send <i class='bx bxs-send'></i></button></p>
+
+            </form>
         </div>
      )
 }
