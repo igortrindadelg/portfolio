@@ -11,7 +11,7 @@ const Main = () => {
                 <h2 className='bigText'>
                     Hi, i'm Igor Trindade. <p>
                     I'm a <span className="bigTextGreen">
-                    Front-end dev
+                    Front-end dev!
                     </span></p>
                 </h2>
                 

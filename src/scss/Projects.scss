@@ -3,7 +3,7 @@
 .containerProjects {
     display: grid;
     justify-content: center;
-    max-width: 100%;
+    width: 100%;
 }
 
 .projectsTitle {
@@ -16,24 +16,25 @@
 }
 
 .projectsContainer {
-    max-width: 100%;
+    justify-items: center;
     background-color: $secondaryColor;
-    min-height: 400px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 2rem;
 }
 
 .projectContainer {
     background-color: $primaryColor;
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
+    max-width: 100%;
 }
 
 @media (max-width: 820px) {
     .projectsContainer {
         grid-template-columns: 1fr;
+        padding: 2rem 0;
     }
 
     .projctContainer {

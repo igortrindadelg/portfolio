@@ -42,19 +42,7 @@ const Services = () => {
     ]
 
     return ( 
-        <div className='aboutContainer'>
-
-            <div className="services">
-                <h2 className='servicesTitle'>Services</h2>
-                <ul className='servicesList'>
-                    <li>Website</li>
-                    <li>Landing Page</li>
-                    <li>Single Page App</li>
-                    <li>NFT Landing Page</li>
-                    <li>PSD to React</li>
-                </ul>
-            </div>
-
+        <div className='servicesContainer'>
 
             <div className="skillsContainer">
                 <h2 className='skillsTitle'>My Skills:</h2>
