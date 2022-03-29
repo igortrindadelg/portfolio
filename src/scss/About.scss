@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: $secondaryColor;
+    padding: 2rem;
 }
 
 
@@ -16,6 +17,7 @@
     max-width: 100%;
     padding: 4rem;
     justify-items: center;
+    border: 1px solid $primaryColor;
 
     .aboutMeImage {
         max-width: 40%;

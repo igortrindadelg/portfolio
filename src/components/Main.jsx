@@ -5,6 +5,12 @@ import '../scss/Main.scss'
 import avatar from '../assets/avatar.png'
 
 const Main = () => {
+    const socialLinks = {
+        github: 'https://github.com/igortrindadelg',
+        linkedin: 'https://www.linkedin.com/in/igor-trindade-776ba8222/',
+        whatsapp: 'https://api.whatsapp.com/send?phone=5548988279797&text=%20'
+    }
+
     return ( 
         <div className="mainContainer">
             <div className="mainText">
@@ -18,20 +24,26 @@ const Main = () => {
                 <p className='description'>Let's build something incredible together! </p>
 
                 <div className="iconsContainer">
-                    <button className="iconsButton">
+                    <a href={socialLinks.github}
+                    target='_blank' 
+                    className="iconsButton">
                         <i class='bx bxl-github'
                         title='GitHub' ></i>
-                    </button>
+                    </a>
                     
-                    <button className="iconsButton">
+                    <a href={socialLinks.linkedin}
+                    target='_blank'
+                    className="iconsButton">
                         <i class='bx bxl-linkedin-square'
                         title='Linkedin' ></i>
-                    </button>
+                    </a>
 
-                    <button className="iconsButton">
+                    <a href={socialLinks.whatsapp}
+                    target="_blank"
+                    className="iconsButton">
                         <i class='bx bxl-whatsapp'
                         title='WhatsApp' ></i>
-                    </button>
+                    </a>
 
                 </div>
             </div>
