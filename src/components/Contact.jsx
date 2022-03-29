@@ -14,7 +14,7 @@ const Contact = () => {
             </p><input type="email" name="email" id="" />
             
 
-            <p>How Can I Help You?</p>
+            <p>How can I help you?</p>
             <input type="text" name="subject" id="" />
            
 

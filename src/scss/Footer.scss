@@ -1,0 +1,18 @@
+@import '../scss/colors';
+
+.footerContainer {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: black;
+    padding: 1rem;
+
+    p {
+        max-width: 100%;
+        color: white;
+    }
+}

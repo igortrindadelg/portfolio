@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 
 import '../scss/Header.scss'
+import Logo from './Logo.jsx'
 
 const Header = () => {
     const [active, setActive] = useState('navLinks')
@@ -19,17 +20,19 @@ const Header = () => {
 
     return (
         <nav className='navbar'>
-            <div className="logo">
-                <h2>{'<IGOR.DEV />'}</h2>
-            </div>
 
+            <div className="logoContainer">
+                <Logo />
+            </div>
+            
             <ul className={active}>
                 <li className="navLink"><a href="#">Home</a></li>
                 <li className="navLink"><a href="#">About</a></li>
                 <li className="navLink"><a href="#">Services</a></li>
                 <li className="navLink"><a href="#">Projects</a></li>
                 <li className="navLink">
-                    <button className="navButton">Contact
+                    <button className="navButton">
+                    <i class='bx bx-envelope'></i>Contact
                     </button>
                 </li>
             </ul>
