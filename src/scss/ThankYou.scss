@@ -23,6 +23,7 @@
 }
 
 .backButton {
+    text-decoration: none;
     width: 100%;
     cursor: pointer;
     text-transform: uppercase;
@@ -43,5 +44,4 @@
     background-color: $secondaryColor;
     border: 1px solid $primaryColor;
     color: $primaryColor;
-    
 }
