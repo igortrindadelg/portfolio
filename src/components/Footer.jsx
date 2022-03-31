@@ -6,7 +6,7 @@ import Logo from './Logo'
 const Footer = () => {
     return ( 
         <div className="footerContainer">
-            <Logo />
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
         </div>
      )
 }

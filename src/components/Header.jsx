@@ -6,17 +6,24 @@ import '../scss/Header.scss'
 import Logo from './Logo.jsx'
 
 const Header = () => {
-    const [active, setActive] = useState('navLinks')
+    const [activeMobile, setActiveMobile] = useState('navLinks')
     const [ toggleIcon, setToggleIcon ] = useState('navToggle')
 
     const navToggle = () => {
-        active === 'navLinks' 
-        ? setActive('navLinks navActive') 
-        : setActive('navLinks') 
+        activeMobile === 'navLinks' 
+        ? setActiveMobile('navLinks navActive') 
+        : setActiveMobile('navLinks') 
 
         toggleIcon === 'navToggle'
         ? setToggleIcon('navToggle toggle')
         : setToggleIcon('navToggle')
+
+    }
+    
+    const closeMenu = () => {
+        activeMobile === 'navLinks navActive'
+        ? setActiveMobile('navLinks')
+        : setActiveMobile('navLinks')
     }
 
     return (
@@ -26,25 +33,65 @@ const Header = () => {
                 <Logo />
             </div>
             
-            <ul className={active}>
+            <ul className={activeMobile}>
                 <li className="navLink">
-                    <Link to="home">Home</Link>
+                    <Link 
+                    to="home"
+                    activeClass="navLinkActive"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >Home</Link>
                 </li>
 
                 <li className="navLink">
-                    <Link to="services">My Skills</Link>
+                    <Link 
+                    to="services"
+                    activeClass="navLinkActive"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-50} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >Skills</Link>
                 </li>
 
                 <li className="navLink">
-                    <Link to="projects">Projects</Link>
+                    <Link 
+                    to="projects"
+                    activeClass="navLinkActive"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >Projects</Link>
                 </li>
                 
                 <li className="navLink">
-                    <Link to="about">About me</Link>
+                    <Link 
+                    to="about"
+                    activeClass="navLinkActive"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-50} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >About me</Link>
                 </li>
                 
                 <li className="navLink">
-                    <Link to='contact' className="navButton">
+                    <Link 
+                    className="navButton"
+                    to='contact' 
+                    spy={true} 
+                    smooth={true} 
+                    offset={-100} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >
                         <p> Contact <i class='bx bx-envelope'></i></p>
                     </Link>
                 </li>
