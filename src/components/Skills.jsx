@@ -1,8 +1,8 @@
 import React from 'react'
 
-import '../scss/Services.scss'
+import '../scss/Skills.scss'
 
-const Services = () => {
+const Skills = () => {
     const skills = [
         {
             id: '01',
@@ -69,4 +69,4 @@ const Services = () => {
      )
 }
  
-export default Services 
+export default Skills 

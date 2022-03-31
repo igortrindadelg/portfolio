@@ -4,7 +4,7 @@
 //   Switch } from 'react-router-dom'
 
 import './App.scss';
-import Services from './components/Services';
+import Skills from './components/Skills';
 import Header from './components/Header';
 import Main from './components/Main';
 import About from './components/About';
@@ -15,7 +15,7 @@ function App() {
     <div>
         <Header />
         <Main />
-        <Services />
+        <Skills />
         <Projects />
         <About />
       
