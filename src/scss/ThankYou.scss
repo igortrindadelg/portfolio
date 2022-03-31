@@ -1,0 +1,47 @@
+@import './colors';
+
+.thanksContainer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $secondaryColor;
+    width: 100%;
+    color: white;
+    min-height: 90vh;
+}
+
+.textContainer {
+    i {
+        font-size: 10rem;
+    }
+}
+
+.buttonContainer {
+    display: grid;
+    justify-content: center;
+}
+
+.backButton {
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #59fa53;
+    transition: all 0.3s ease;
+    color: black;
+    font-weight: 600;
+}
+
+.backButton:hover {
+    background-color: $secondaryColor;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+    
+}

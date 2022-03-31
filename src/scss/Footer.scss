@@ -3,16 +3,28 @@
 .footerContainer {
     max-width: 100%;
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 1rem;
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
     align-items: center;
-    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    min-height: 10vh;
     background-color: #0b1b2ce1;
     padding: 1rem;
-
-    p {
-        text-align: center;
+    
+    p { 
+        font-size: 1.1rem;
         max-width: 100%;
-        color: white;
+        color: rgba(255, 255, 255, 0.925);
+    }
+}
+
+@media (max-width: 900px) {
+    .footerContainer {
+        grid-template-columns: 1fr;
+        
+        p {
+            font-size: 1rem;
+        }
     }
 }

@@ -6,11 +6,6 @@ import avatar from '../assets/avatar.png'
 import SocialLinks from './SocialLinks'
 
 const Main = () => {
-    const socialLinks = {
-        github: 'https://github.com/igortrindadelg',
-        linkedin: 'https://www.linkedin.com/in/igor-trindade-776ba8222/',
-        whatsapp: 'https://api.whatsapp.com/send?phone=5548988279797&text=%20'
-    }
 
     return ( 
         <div className="mainContainer" id='home'>

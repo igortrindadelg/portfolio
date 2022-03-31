@@ -5,10 +5,10 @@ import '../scss/Contact.scss'
 const Contact = () => {
     return ( 
         <div className="contactContainer" id='contact'>
-            <h2>Contact</h2>
+            <h2>Get In Touch</h2>
 
-            <form action="https://formsubmit.co/igortrindadelg@gmail.com" 
-            target='_blank'
+            <form 
+            action="https://formsubmit.co/igortrindadelg@gmail.com" 
             method="post">
 
                 <p>Your name: </p> 
@@ -27,7 +27,7 @@ const Contact = () => {
 
                 <input type="hidden" name="_captcha" value="false"></input>
 
-                <input type="hidden" name="_next" value="http://localhost:3000" />
+                <input type="hidden" name="_next" value="http://localhost:3000/thank-you" />
 
                 <p className="buttonContainer"><button className='buttonSubmit' type="submit">Send <i class='bx bxs-send'></i></button></p>
 

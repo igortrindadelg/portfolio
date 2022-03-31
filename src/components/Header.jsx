@@ -92,7 +92,7 @@ const Header = () => {
                     duration={500}
                     onClick={closeMenu}
                     >
-                        <p> Contact <i class='bx bx-envelope'></i></p>
+                        <p>Get In Touch <i class='bx bx-envelope'></i></p>
                     </Link>
                 </li>
             </ul>
