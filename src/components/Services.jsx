@@ -42,7 +42,7 @@ const Services = () => {
     ]
 
     return ( 
-        <div className='servicesContainer'>
+        <div className='servicesContainer' id='services'>
 
             <div className="skillsContainer">
                 <h2 className='skillsTitle'>My Skills:</h2>

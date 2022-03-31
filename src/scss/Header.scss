@@ -1,6 +1,8 @@
 @import '../scss/colors';
 .navbar {
-    background-color: #14273d;
+    position: fixed;
+    top: 0;
+    background-color: $secondaryColor;
     color: white;
     display: grid;
     grid-template-columns: 1fr auto auto;
@@ -23,6 +25,7 @@
     grid-gap: 1.5rem;
 
     .navLink {
+        cursor: pointer;
         list-style: none;
         font-size: 1.2rem;
         
@@ -33,7 +36,7 @@
         }
 
         a:hover {
-            color: #59fa53;
+            color: $primaryColor;
         }
     }
 }
@@ -51,7 +54,11 @@
     border: none;
     background-color: #59fa53;
     transition: all 0.3s ease;
-    
+
+    p {
+        color: black;
+    }
+
     i {
         font-size: 1.5rem;
     }
@@ -61,7 +68,10 @@
 .navButton:hover {
     background-color: $secondaryColor;
     border: 1px solid $primaryColor;
-    color: white;
+
+    p {
+        color: $primaryColor;
+    }
 }
 
 

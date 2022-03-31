@@ -7,7 +7,7 @@ import SocialLinks from './SocialLinks'
 
 const About = () => {
     return (
-        <div className="containerAbout">
+        <div className="containerAbout" id='about'>
 
             <div className="aboutMeContainer">
   

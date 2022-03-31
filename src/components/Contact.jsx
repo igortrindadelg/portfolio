@@ -4,7 +4,7 @@ import '../scss/Contact.scss'
 
 const Contact = () => {
     return ( 
-        <div className="contactContainer">
+        <div className="contactContainer" id='contact'>
             <h2>Contact</h2>
 
             <form action="https://formsubmit.co/igortrindadelg@gmail.com" 

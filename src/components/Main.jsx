@@ -13,7 +13,7 @@ const Main = () => {
     }
 
     return ( 
-        <div className="mainContainer">
+        <div className="mainContainer" id='home'>
             <div className="mainText">
                 <h2 className='bigText'>
                     Hi, i'm Igor Trindade. <p>
