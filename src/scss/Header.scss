@@ -13,6 +13,7 @@
 
     .logoContainer {
         padding-left: 5rem;
+        cursor: pointer;
     }
 }
 
@@ -107,7 +108,7 @@
         .navLinks {
             width: 100%;
             min-height: 90vh;
-            background-color: #14273d;
+            background-color: $secondaryColor;
             position: fixed;
             top: 10vh;
             right: 0;

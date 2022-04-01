@@ -24,13 +24,22 @@ const Header = () => {
         activeMobile === 'navLinks navActive'
         ? setActiveMobile('navLinks')
         : setActiveMobile('navLinks')
+
+        navToggle()
     }
 
     return (
         <nav className='navbar'>
 
             <div className="logoContainer">
-                <Logo />
+                <Link 
+                to="home"
+                spy={true} 
+                smooth={true} 
+                offset={-100} 
+                duration={500}
+                onClick={closeMenu}
+                ><Logo /></Link>
             </div>
             
             <ul className={activeMobile}>
@@ -52,7 +61,7 @@ const Header = () => {
                     activeClass="navLinkActive"
                     spy={true} 
                     smooth={true} 
-                    offset={-50} 
+                    offset={-100} 
                     duration={500}
                     onClick={closeMenu}
                     >About</Link>
@@ -64,7 +73,7 @@ const Header = () => {
                     activeClass="navLinkActive"
                     spy={true} 
                     smooth={true} 
-                    offset={-50} 
+                    offset={-100} 
                     duration={500}
                     onClick={closeMenu}
                     >Skills</Link>
@@ -76,7 +85,7 @@ const Header = () => {
                     activeClass="navLinkActive"
                     spy={true} 
                     smooth={true} 
-                    offset={-20} 
+                    offset={-100} 
                     duration={500}
                     onClick={closeMenu}
                     >Projects</Link>

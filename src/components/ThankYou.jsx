@@ -8,11 +8,9 @@ const ThankYou = () => {
                 
                 <div className="textContainer">
                     <i class='bx bx-mail-send'></i>
-                    <h2>Your message was sent! </h2>
-                    <p>
-                        Your message was sent.
-                        You will soon receive an answer.
-                    </p>
+                    <h2>Thank You!</h2>
+                    <p>Your message was sent.</p>
+                    <p>You will soon receive an answer.</p>
                 </div>
                 
                 <div className="buttonContainer">

@@ -8,7 +8,7 @@
     background-color: $secondaryColor;
     width: 100%;
     color: white;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .textContainer {
@@ -19,22 +19,23 @@
 
 .buttonContainer {
     display: grid;
-    justify-content: center;
+    justify-items: center;
+    margin-top: 1rem;
 }
 
 .backButton {
     text-decoration: none;
-    width: 100%;
+   
     cursor: pointer;
     text-transform: uppercase;
     justify-content: center;
     display: grid;
     align-items: center;
-    padding: 0.7rem 1.4rem;
-    font-size: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     border: none;
-    background-color: #59fa53;
+    background-color: $primaryColor;
     transition: all 0.3s ease;
     color: black;
     font-weight: 600;
