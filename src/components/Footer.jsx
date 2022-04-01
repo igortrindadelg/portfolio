@@ -5,10 +5,8 @@ import Logo from './Logo'
 
 const Footer = () => {
     return ( 
-        <div className="footerContainer">
-            
-            
-            {/* <Logo /> */}
+        <div className="footerContainer">               
+            <Logo />
             <p>• Let's build something incredible together! •</p>
 
         </div>

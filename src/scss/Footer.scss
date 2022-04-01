@@ -4,16 +4,16 @@
     max-width: 100%;
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 0.5rem;
+    grid-gap: 1rem;
     align-items: center;
     justify-content: center;
     text-align: center;
     min-height: 10vh;
-    background-color: #0b1b2ce1;
-    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 2rem;
     
     p { 
-        font-size: 1rem;
+        font-size: 1.1rem;
         max-width: 100%;
         color: rgba(255, 255, 255, 0.925);
     }
@@ -22,6 +22,5 @@
 @media (max-width: 900px) {
     .footerContainer {
         grid-template-columns: 1fr;
-    
     }
 }

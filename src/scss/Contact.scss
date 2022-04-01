@@ -2,10 +2,10 @@
 
 .contactContainer {
     display: grid;
-    padding: 2rem 6rem;
+    padding: 0;
     max-width: 100%;
     justify-content: center;
-    background-color: white;
+    background-color: $secondaryColor;
 }
 
 .formContainer {
@@ -17,7 +17,7 @@
     border-radius: 20px;
 
     h2 {
-        color: $secondaryColor;
+        color: $primaryColor;
         text-align: center;
         font-weight: 400;
         text-transform: uppercase;
@@ -26,8 +26,7 @@
     }
 
     p {
-        color: $secondaryColor;
-        // margin-bottom: 0.2rem;
+        color: white;
     }
 
     input, .message {
@@ -55,11 +54,11 @@
     font-size: 1rem;
     border-radius: 10px;
     border: none;
-    background-color: $secondaryColor;
+    background-color: $primaryColor;
     transition: all 0.3s ease;
 
     p {
-        color: $primaryColor;
+        color: $secondaryColor;
         display: grid;
         grid-auto-flow: column;
         align-items: center;
@@ -71,14 +70,16 @@
         font-size: 1.5rem;
     }
 
+    margin-bottom: 1rem;
+
 }
 
 .buttonSubmit:hover {
-    background-color: $primaryColor;
-    border: 2px solid $secondaryColor;
+    background-color: $secondaryColor;
+    border: 2px solid $primaryColor;
 
     p {
-        color: $secondaryColor;
+        color: $primaryColor;
     }
 }
 

@@ -3,26 +3,41 @@
 
 .servicesContainer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto auto;
     color: black;
     max-width: 100%;
     background-color: $secondaryColor;
     align-items: center;
     justify-content: center;
-    padding: 2rem 0;
+    padding-top: 2rem;
+}
+
+.skillsTitle {
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 400;
+    padding: 1rem 4rem;
+    
+    p { 
+        padding: 0.5rem 1rem;
+        border: 2px solid $primaryColor;
+        border-radius: 10px;
+        padding-top: 0.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.titleContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .skillsContainer {
     display: grid;
     grid-auto-flow: row;
-
-    .skillsTitle {
-        color: white;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2rem;
-        font-weight: 400;
-    }
 }
 
 .listContainer {
@@ -33,7 +48,7 @@
     grid-gap: 1rem;
     max-width: 100%;
     overflow: hidden;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .skillContainer {
@@ -51,6 +66,16 @@
 }
 
 @media (max-width: 900px) {
+    .servicesContainer {
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+    }
+
+    .skillsTitle {
+        text-align: center;
+        font-size: 2rem;
+    }
+
     .listContainer {
         grid-template-columns: repeat(3, auto);
         grid-auto-flow: row;
@@ -59,6 +84,7 @@
 }
 
 @media (max-width: 380px) {
+
     .skillContainer {
         padding: 0.5rem;
     }

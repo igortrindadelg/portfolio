@@ -3,11 +3,11 @@
 .containerAbout {
     display: grid;
     grid-template-columns: 1fr;
-    background-color: white;
-    color: $secondaryColor;
+    background-color: $secondaryColor;
+    color: white;
     align-items: center;
     justify-items: center;
-    padding: 2rem 6rem;
+    padding: 0 6rem;
 }
 
 
@@ -55,9 +55,9 @@
     .aboutMeImage {
         width: 50%;
     }
-    
+
     .containerAbout {
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .aboutMeContainer {

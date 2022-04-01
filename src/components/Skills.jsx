@@ -49,9 +49,12 @@ const Skills = () => {
     return ( 
         <div className='servicesContainer' id='services'>
 
-            <div className="skillsContainer">
-                <h2 className='skillsTitle'>My Skills:</h2>
+            <div className="titleContainer">
+                    <h2 className='skillsTitle'>My Skills:
+                    <p>What I can do for you?</p></h2>
+            </div>
 
+            <div className="skillsContainer">
                 <div className="listContainer">
 
                 {

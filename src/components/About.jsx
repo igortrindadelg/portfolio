@@ -17,7 +17,8 @@ const About = () => {
                     <h2 className='title'>
                         About Me</h2>
 
-                    <p>Hi, I'm Igor Trindade :) Besides being a front-end dev, I'm a 26 year old cinephile who lives in Florianópolis - Brazil, with my boyfriend and our cute pug. Currently I'm focused on always improving my skills as a front-end developer and I would love to help you with your project.</p>
+                    <p>Hi, I'm Igor Trindade. I am a professional and experienced front-end developer who is dedicated to being more and more up-to-date with the latest technologies. My main tools are JavaScript, React.js, SaSS, Node.js with the focus on creating solutions for your business with the best practices in the market.
+                    Get in touch to learn more about what I can do to help your business ;)</p>
 
                     <div className="socialLinksContainer">
                         <SocialLinks /> 
