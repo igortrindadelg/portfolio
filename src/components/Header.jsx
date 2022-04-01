@@ -48,6 +48,18 @@ const Header = () => {
 
                 <li className="navLink">
                     <Link 
+                    to="about"
+                    activeClass="navLinkActive"
+                    spy={true} 
+                    smooth={true} 
+                    offset={-50} 
+                    duration={500}
+                    onClick={closeMenu}
+                    >About</Link>
+                </li>
+
+                <li className="navLink">
+                    <Link 
                     to="services"
                     activeClass="navLinkActive"
                     spy={true} 
@@ -64,23 +76,12 @@ const Header = () => {
                     activeClass="navLinkActive"
                     spy={true} 
                     smooth={true} 
-                    offset={-100} 
+                    offset={-20} 
                     duration={500}
                     onClick={closeMenu}
                     >Projects</Link>
                 </li>
                 
-                <li className="navLink">
-                    <Link 
-                    to="about"
-                    activeClass="navLinkActive"
-                    spy={true} 
-                    smooth={true} 
-                    offset={-50} 
-                    duration={500}
-                    onClick={closeMenu}
-                    >About me</Link>
-                </li>
                 
                 <li className="navLink">
                     <Link 

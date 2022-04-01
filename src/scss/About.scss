@@ -2,48 +2,78 @@
 
 .containerAbout {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: $secondaryColor;
-    padding: 2rem;
+    grid-template-columns: 1fr;
+    background-color: white;
+    color: $secondaryColor;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 6rem;
 }
 
 
 .aboutMeContainer {
-    color: rgb(255, 255, 255);
-    border-radius: 20px;
     display: grid;
-    grid-auto-flow: row;
-    align-content: flex-start;
+    grid-template-columns: auto auto;
+    grid-auto-flow: column;
+    align-items: center;
     max-width: 100%;
-    padding: 2rem;
     justify-items: center;
-    border: 1px solid $primaryColor;
+    border: 2px solid $primaryColor;
+    border-radius: 20px;
+    padding: 2rem;
 
     .aboutMeImage {
-        max-width: 40%;
-        border-radius: 50%;
-        padding: 1rem;
+        max-width: 90%;
+        border-radius: 20px;
     }
 
-    h2 {
-        text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-        font-weight: 400;
-    }
+    .aboutMeText {
+        display: grid;
+        align-content: center;
 
-    p {
-        padding: 1rem;
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .socialLinksContainer {
+            display: grid;
+            justify-content: center;
+        }
+
     }
 
 }
 
+.aboutMeText > p {
+    padding: 1rem 4rem;
+}
+
 @media (max-width: 900px) {
+    .aboutMeImage {
+        width: 50%;
+    }
+    
     .containerAbout {
-        grid-template-columns: 1fr;
+        padding: 1rem;
     }
 
     .aboutMeContainer {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
         padding: 1rem;
+    }
+
+    .aboutMeText {
+        p {
+            padding: 1rem;
+        }
+
+        h2 {
+            padding-top: 1rem;
+        }
+
     }
 }

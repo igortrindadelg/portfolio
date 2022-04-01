@@ -1,67 +1,68 @@
-@import '../scss/colors.scss';
+@import './colors';
 
 .contactContainer {
-    color: white;
     display: grid;
-    grid-auto-flow: row;
-    padding: 1rem 2rem;
+    padding: 2rem;
     max-width: 100%;
+}
 
-    p {
-        padding-bottom: 0.5rem;
-        font-size: 1rem;
-    }
+.formContainer {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto;
+    width: 100%;
 
     h2 {
         color: white;
         text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
         font-weight: 400;
+        text-transform: uppercase;
         padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    p {
+        color: white;
+        // margin-bottom: 0.2rem;
+    }
+
+    input, .message {
+        font-size: 1.2rem;
+        width: 40vw;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .message {
+        height: 8rem;
     }
 }
 
-input {
-    height: 2rem;
-    border: none;
-    border-radius: 20px;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-    width: 90%;
-}
-
-.message {
-    font-size: 1.2rem;
-    padding: 1rem;
-    border-radius: 20px;
-    height: 8rem;
-    width: 90%;
-    word-break: break-word;
-}
-
-
-.buttonContainer {
-    display: grid;
-    justify-content: end;
-    padding-top: 1rem;
-    padding-right: 2rem;
-}
 
 .buttonSubmit {
+    margin-top: 0.5rem;
     cursor: pointer;
     text-transform: uppercase;
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 0.3rem;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
+    align-items: center;
+    padding: 1.2rem 6rem;
+    font-size: 1rem;
     border-radius: 10px;
     border: none;
     background-color: #59fa53;
-    transition: all 0.5s ease;
-    
+    transition: all 0.3s ease;
+
+    p {
+        color: black;
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 0.3rem;
+        font-weight: 600;
+    }
+
     i {
         font-size: 1.5rem;
     }
@@ -71,19 +72,16 @@ input {
 .buttonSubmit:hover {
     background-color: $secondaryColor;
     border: 1px solid $primaryColor;
-    color: white;
+
+    p {
+        color: $primaryColor;
+    }
 }
 
 @media (max-width: 900px) {
     .contactContainer {
-        padding: 3rem 0;
-    }
-
-    .message, input {
-        width: 90%;
-    }
-
-    .buttonContainer {
-        padding-right: 1rem;
+        input, .message {
+            width: 80vw;
+        }
     }
 }

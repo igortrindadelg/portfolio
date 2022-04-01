@@ -3,6 +3,7 @@
 .containerProjects {
     display: grid;
     justify-content: center;
+    padding: 2rem 6rem;
 }
 
 .projectsTitle {
@@ -28,11 +29,15 @@
     max-width: 100%;
 
     h2 {
-        padding: 10rem 4rem;
+        padding: 8rem 4rem;
     }
 }
 
 @media (max-width: 900px) {
+
+    .containerProjects {
+        padding: 1rem;
+    }
     .projectsContainer {
         grid-template-columns: 1fr;
         padding: 1rem;

@@ -4,15 +4,17 @@ import Main from './Main';
 import About from './About';
 import Projects from './Projects';
 import Footer from './Footer'
+import Contact from './Contact';
   
   const HomePage = () => {
     return (
       <div>
           <Header />
           <Main />
+          <About />
           <Skills />
           <Projects />
-          <About />
+          <Contact />
           <Footer />
       </div>
     );

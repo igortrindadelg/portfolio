@@ -13,16 +13,20 @@ const About = () => {
   
                 <img src={Igor} alt="" className='aboutMeImage'/>
 
-                <h2 className='title'>
-                    About Me</h2>
+                <div className="aboutMeText">
+                    <h2 className='title'>
+                        About Me</h2>
 
-                <p>Hi, I'm Igor Trindade :) Besides being a front-end dev, I'm a 26 year old cinephile who lives in Florianópolis - Brazil, with my boyfriend and our cute pug. Currently I'm focused on always improving my skills as a front-end developer and I would love to help you with your project.</p>
+                    <p>Hi, I'm Igor Trindade :) Besides being a front-end dev, I'm a 26 year old cinephile who lives in Florianópolis - Brazil, with my boyfriend and our cute pug. Currently I'm focused on always improving my skills as a front-end developer and I would love to help you with your project.</p>
 
-                <SocialLinks />
+                    <div className="socialLinksContainer">
+                        <SocialLinks /> 
+                    </div>
+                </div>
 
             </div>
 
-            <Contact />
+            {/* <Contact /> */}
             
         </div>
     )

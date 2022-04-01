@@ -38,6 +38,11 @@ const Skills = () => {
             id: '07',
             name: 'Node.js',
             image: 'bx bxl-nodejs'
+        },
+        {
+            id: '08',
+            name: 'Bootstrap',
+            image: 'bx bxl-bootstrap'
         }
     ]
 

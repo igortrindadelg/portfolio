@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footerContainer">
             
             
-            <Logo />
+            {/* <Logo /> */}
             <p>• Let's build something incredible together! •</p>
 
         </div>
