@@ -43,7 +43,6 @@
     justify-items: center;
 
     img {
-        z-index: -1;
         bottom: 0;
         transform: rotateY(180deg);
         width: 100%;
@@ -61,5 +60,9 @@
 
     .mainContainer {
         grid-template-columns: 1fr;
+    }
+
+    .mainContainer {
+        margin-top: 20vh;
     }
 }

@@ -10,6 +10,7 @@
     justify-content: space-around;
     width: 100%;
     min-height: 10vh;
+    z-index: +1;
 
     .logoContainer {
         padding-left: 5rem;
@@ -106,6 +107,7 @@
             padding: 0 1rem;
         }
         .navLinks {
+            z-index: +1;
             width: 100%;
             min-height: 90vh;
             background-color: $secondaryColor;

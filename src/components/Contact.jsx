@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import '../scss/Contact.scss'
 
 const Contact = () => {
+    const [ displayMessage, setDisplayMessage ] = useState('messageSent')
+
+    const showDisplayMessage = () => {
+        displayMessage === 'messageSent'
+        ? setDisplayMessage('messageSentActive')
+        : setDisplayMessage('messageSent')
+    }
+
     return ( 
         <div className="contactContainer" id='contact'>
             
@@ -29,11 +37,10 @@ const Contact = () => {
 
                     <input type="hidden" name="_captcha" value="false"></input>
 
-                    <input type="hidden" name="_next" value="http://localhost:3000/thank-you" />
+                    <input type="hidden" name="_next" value="https://www.igortrindade.com" />
 
-                    <p className="buttonContainer"><button className='buttonSubmit' type="submit">
+                    <p className="buttonContainer"><button className='buttonSubmit' type="submit" onClick={showDisplayMessage}>
                        <p>Send <i class='bx bxs-send'></i></p></button></p>
-
                 </form>
             </div>
         </div>

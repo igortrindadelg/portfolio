@@ -1,6 +1,5 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import '../scss/ThankYou.scss'
-
 
 const ThankYou = () => {
     return (
