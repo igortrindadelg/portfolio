@@ -1,10 +1,16 @@
 import styles from '../styles/Navbar.module.scss'
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../public/assets/logo.png'
 
 export default function Navbar() {
     return (
         <nav className={styles.navbar}>
-            <p className={styles.logo}>IGOR TRINDADE</p>
+            <Image
+                className={styles.logo}
+                src={logo}
+                alt="Logo - Igor Trindade"
+            />
 
             <ul className={styles.menuLista}>
                 <li className={styles.menuLinks}>

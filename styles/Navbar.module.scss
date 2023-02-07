@@ -1,7 +1,7 @@
 .navbar {
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 60px;
+    grid-template-rows: 80px;
     align-items: center;
     // background-color: rgb(30, 29, 31);
     color: rgb(0, 0, 0);
@@ -9,7 +9,13 @@
 }
 
 .logo {
-    font-size: 14pt;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.logo:hover {
+    rotate: -5deg;
 }
 
 .menuLista {
@@ -21,6 +27,6 @@
 }
 
 .menuLinks:hover {
-    background-color: #8450e0;
-    rotate: -10deg;
+    background-color: #8550e0b7;
+    rotate: -5deg;
 }

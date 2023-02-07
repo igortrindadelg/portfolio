@@ -8,18 +8,27 @@ export default function Hero() {
         <section className={styles.heroContainer}>
 
             <div className={styles.heroCTA}>
-                <p>Olá, sou Igor Trindade!
+                <p className={styles.heroApresentacao}>Olá, sou Igor Trindade! &#9996;&#65039;
                 </p>
 
                 <h1 className="heroCTA">
                     DESENVOLVEDOR FRONT-END
                 </h1>
 
-                <ul className={styles.socialButtons}>
-                    <Link href='#'>Linkedin</Link>
-                    <Link href='#'>GitHub</Link>
-                    <Link href='#'>WatsApp</Link>
+                <ul className={styles.socialButtonsContainer}>
+                    <Link
+                    className={styles.socialButtons}
+                    href='#'>Linkedin</Link>
+
+                    <Link
+                    className={styles.socialButtons}
+                    href='#'>GitHub</Link>
+
+                    <Link
+                    className={styles.socialButtons}
+                    href='#'>WhattsApp</Link>
                 </ul>
+
             </div>
 
             <div className={styles.heroImagemContainer}>
