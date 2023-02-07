@@ -1,0 +1,37 @@
+.heroContainer {
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+    border-color: white;
+    border: 10px white;
+}
+
+.heroCTA {
+
+    h1 {
+        font-size: 40pt;
+    }
+    display: grid;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.socialButtons {
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    justify-content: flex-start;
+}
+
+.heroImagemContainer {
+    display: grid;
+    justify-content: flex-end;
+}
+
+.heroImagem {
+    border-radius: 50px;
+    width: 100%;
+    max-height: 80vh;
+}
