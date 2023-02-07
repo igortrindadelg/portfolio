@@ -9,9 +9,9 @@
 }
 
 .heroCTA {
-    h1 {
-        font-size: 40pt;
-        margin-bottom: 10px;
+    .textoHeroCTA {
+        font-size: 36pt;
+        margin-bottom: 6px;
     }
 
     .heroApresentacao {
@@ -21,6 +21,12 @@
         padding: 5px 10px;
         color: white;
         border-radius: 10px;
+    }
+
+    .descricaoCTA {
+        font-size: 14pt;
+        margin-bottom: 14px;
+        padding-right: 50px;
     }
 
     display: grid;
@@ -56,5 +62,5 @@
 .heroImagem {
     border-radius: 50px;
     width: 100%;
-    max-height: 80vh;
+    max-height: 75vh;
 }

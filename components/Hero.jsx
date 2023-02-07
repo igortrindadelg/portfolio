@@ -11,9 +11,11 @@ export default function Hero() {
                 <p className={styles.heroApresentacao}>Olá, sou Igor Trindade! &#9996;&#65039;
                 </p>
 
-                <h1 className="heroCTA">
-                    DESENVOLVEDOR FRONT-END
+                <h1 className={styles.textoHeroCTA}>
+                    Desenvolvedor Front-End de Florianópolis/SC
                 </h1>
+
+                <p className={styles.descricaoCTA}>Sou apaixonado em transformar ideias em experiências digitais incríveis. Entre em contato para saber mais sobre como posso ajudar a transformar sua visão em realidade! &#128071;</p>
 
                 <ul className={styles.socialButtonsContainer}>
                     <Link
