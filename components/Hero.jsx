@@ -4,6 +4,8 @@ import Image from 'next/image'
 import heroImagem from '../public/assets/imagem-igor.jpg'
 
 export default function Hero() {
+    const texto = `Igor Trindade - Desenvolvedor Front-End -`
+
     return (
         <section className={styles.heroContainer}>
 
@@ -32,13 +34,28 @@ export default function Hero() {
                 </ul>
 
             </div>
+{/* 
+            <div className={styles.textoCircular}>
+                    <div className={styles.meioTexto}></div>
+                    <div className={styles.textoContainer}>
+                            {texto.split("").map(
+                                (char, i) => (
+                                    <span
+                                    key={i} 
+                                    className={styles.textoSpan}
+                                    style={{transform: `rotate(${i * 8.1}deg)`}}>{char}</span>)
+                            )}    
+                    </div>
+            </div> */}
 
             <div className={styles.heroImagemContainer}>
-                <Image
-                className={styles.heroImagem}
-                src={heroImagem}
-                alt="Picture of the author"
-                />
+                    
+                    <Image
+                    className={styles.heroImagem}
+                    src={heroImagem}
+                    alt="Picture of the author"
+                    />
+
             </div>
 
         </section>

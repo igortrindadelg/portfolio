@@ -11,9 +11,10 @@ export default function Home() {
         <Hero />
       </div>
 
-      <div className={styles.sobreMimContainer}>
+      <div id='sobreMim'className={styles.sobreMimContainer}>
         <SobreMim />
       </div>
+
     </div>
   )
 }

@@ -17,7 +17,7 @@ export default function Navbar() {
                     <Link href='#'>Home</Link>
                 </li>
                 <li className={styles.menuLinks}>
-                    <Link href='#'>Sobre Mim</Link>
+                    <Link href='#sobreMim'>Sobre Mim</Link>
                 </li>
                 <li className={styles.menuLinks}>
                     <Link href='#'>Projetos</Link>

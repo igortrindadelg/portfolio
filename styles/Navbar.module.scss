@@ -1,9 +1,19 @@
 .navbar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 128px;
+    margin-left: 6px;
+    margin-right: 6px;
+    border-top: 6px solid #8450e0;
     display: grid;
     grid-template-columns: auto 1fr;
-    grid-template-rows: 80px;
+    grid-template-rows: 60px;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);    
 }
 
 .logo {
@@ -19,7 +29,7 @@
 .menuLista {
     display: grid;
     grid-auto-flow: column;
-    justify-content: end;
+    justify-content: flex-end;
     grid-gap: 0 1rem;
     font-size: 14pt;
 }
