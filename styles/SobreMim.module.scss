@@ -1,75 +1,32 @@
 .sobreMimContainer {
     display: grid;
-    // min-height: 100vh;
-    // background-color: #000000;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    grid-gap: 12px;
+}
+
+.heroImagemContainer {
+    border-radius: 20px;
+    max-width: 30vw;
+}
+
+.heroImagem {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
 }
 
 .quemSouEu {
     display: grid;
-    grid-template-columns: auto 1fr;
-    align-content: center;
-    font-size: 14pt;
-    // border: 2px solid #8450e0;
-    border-radius: 10px;
-    margin-bottom: 12px;
-    padding-left: 10px;
-
-    .textoCircular {
-        position: relative;
-        width: 250px;
-        height: 250px;
-        border-radius: 50%;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        margin-right: 18px;
-        background-color: black;
-        place-items: center;
-    
-        .meioTexto {
-            position: absolute;
-            width: 190px;
-            height: 190px;
-            border-radius: 50%;
-            background-image: url('../public/assets/foto-perfil.png');
-            background-size: cover;
-            filter: grayscale(100%);
-        }
-    
-        .textoContainer {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            animation: rotateText 10s linear infinite;
-            color: white;
-    
-            .textoSpan {
-                position: absolute;
-                left: 50%;
-                font-size: 1.2rem;
-                transform-origin: 0 125px;
-            }
-        }
-    }
-    
-    @keyframes rotateText {
-        0%
-        {
-            transform: rotate(360deg);
-        }
-        100%
-        {
-            transform: rotate(0deg);
-        }
-    }
+    align-content: flex-start;
+    padding: 36px;
+    background-color: #3b3b3b;
+    color: white;
 
     p {
-        padding: 20px;
-        font-size: 14pt;
+        margin-bottom: 12px;
+        font-size: 12pt;
     }
-
 }
 
 .minhasHabilidades {
