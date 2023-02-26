@@ -13,8 +13,7 @@
         margin: 12px 0;
         opacity: 0;
         transform: translateY(-50px);
-        animation: aparecer 1s forwards;
-        animation-delay: 0.25s;
+        animation: aparecer 1s forwards 0.25s;
     }
 
     .descricaoCTA {
@@ -23,8 +22,7 @@
         padding: 0 100px;
         opacity: 0;
         transform: translateY(-50px);
-        animation: aparecer 1s forwards;
-        animation-delay: 0.5s;
+        animation: aparecer 1s forwards 0.5s;
     }
 
     display: grid;
@@ -39,18 +37,18 @@
     justify-content: flex-start;
     opacity: 0;
     transform: translateY(-50px);
-    animation: aparecer2 1s forwards;
-    animation-delay: 0.75s;
+    animation: aparecer2 1s forwards 0.75s;
 }
 
 .socialButtons {
     border: 2px solid #8450e0;
     padding: 10px 20px;
     border-radius: 10px;
+    transition: all 0.5s ease-in;
 }
 
 .socialButtons:hover {
-    border: 2px solid black;
+    border: 2px solid #8450e0;
     background-color: #8450e0;
     color: white;
     rotate: -5deg;

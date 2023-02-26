@@ -10,6 +10,8 @@
     opacity: 0;
     transform: translateY(-50px);
     animation: aparecer 1s forwards;
+    transition: all 1s ease-in-out;
+    cursor: pointer;
 
     .meioTexto {
         position: absolute;
@@ -57,4 +59,8 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
+
+.textoCircular:hover {
+    rotate: -10deg;
+}
