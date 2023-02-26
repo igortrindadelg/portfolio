@@ -8,9 +8,9 @@ import Projetos from '../components/Projetos'
 import { useState } from 'react'
 
 export default function Home() {
-  const [isDarkMode, setIsDarkMode] = useState(false)
-  //   localStorage.getItem('isDarkMode' === true || false)
-  // )
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem('isDarkMode' === true || false)
+  )
 
   function HandleToggle() {
       setIsDarkMode(!isDarkMode);
