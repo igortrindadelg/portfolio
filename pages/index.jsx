@@ -12,7 +12,7 @@ export default function Home() {
         <Hero />
       </div>
 
-      <Projects />
+      {/* <Projects /> */}
 
 
       <div id='sobreMim'className={styles.sobreMimContainer}>

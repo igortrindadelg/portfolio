@@ -1,6 +1,35 @@
 .projectsContainer {
-    display: grid;
+    overflow: hidden;
+}
+
+.scrollText {
+    width: calc(100% + 400px);
+    left: -400px;
+    display: flex;
     background-color: black;
     color: white;
+    padding: 18px 0;
+
+    h4 {
+        margin-right: 16px;
+        font-weight: 400;
+        font-size: 20pt;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        white-space: nowrap;
+        animation: animate 90s linear infinite;
+    }
+}
+
+@keyframes animate {
+    0% 
+    {
+        transform: translateX(1%);
+    }
+   
+    100%
+    {
+        transform: translateX(-100%);
+    }
 }
 

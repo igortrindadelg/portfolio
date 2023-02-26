@@ -8,6 +8,7 @@
     display: grid;
     justify-items: center;
     border-radius: 20px;
+    // animation: deslizar 1s ease-in;
 }
 
 .heroImagem {
@@ -24,6 +25,7 @@
     // background-color: rgb(41, 41, 41);
     border-radius: 20px;
     // color: white;
+    // animation: deslizar2 1s ease-in;
 
     h2 {
         text-align: center;
@@ -68,3 +70,29 @@
         padding: 0 8px;
     }
 }
+
+// @keyframes deslizar {
+//     0%
+//     {
+//         opacity: 0;
+//         transform: translateX(-50px);
+//     }
+//     100% 
+//     {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
+
+// @keyframes deslizar2 {
+//     0%
+//     {
+//         opacity: 0;
+//         transform: translateX(50px);
+//     }
+//     100% 
+//     {
+//         opacity: 1;
+//         transform: translateX(0);
+//     }
+// }
