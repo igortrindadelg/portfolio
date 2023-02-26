@@ -38,3 +38,13 @@
     background-color: #8550e0b7;
     rotate: -5deg;
 }
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 12px;
+    }
+
+    .menuLista {
+        display: none;
+    }
+}

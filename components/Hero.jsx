@@ -12,14 +12,12 @@ export default function Hero() {
             <ImagemCirculo />
 
             <div className={styles.heroCTA}>
-                <p className={styles.heroApresentacao}>Olá, sou Igor Trindade! &#9996;&#65039;
-                </p>
-
+                
                 <h1 className={styles.textoHeroCTA}>
                     Desenvolvedor Front-End e UI Designer
                 </h1>
 
-                <p className={styles.descricaoCTA}>Sou apaixonado em transformar ideias em experiências digitais incríveis. Entre em contato para saber mais sobre como posso ajudar a transformar sua visão em realidade! &#128071;</p>
+                <p className={styles.descricaoCTA}>Sou apaixonado em transformar ideias em experiências digitais incríveis. Entre em contato para saber como posso ajudar a transformar sua visão em realidade! &#128071;</p>
 
                 <ul className={styles.socialButtonsContainer}>
                     <Link

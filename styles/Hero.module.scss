@@ -1,32 +1,21 @@
 .heroContainer {
     min-height: 100vh;
+    max-width: 100%;
     display: grid;
     align-content: center;
     justify-items: center;
-    border-color: white;
-    border: 10px white;
     text-align: center;
 }
 
 .heroCTA {
     .textoHeroCTA {
         font-size: 36pt;
-        margin-bottom: 6px;
-    }
-
-    .heroApresentacao {
-        display: none;
-        background-color: #8450e0;
-        width: fit-content;
-        font-size: 18pt;
-        padding: 5px 10px;
-        color: white;
-        border-radius: 10px;
+        margin: 12px 0;
     }
 
     .descricaoCTA {
         font-size: 14pt;
-        margin-bottom: 14px;
+        margin-bottom: 18px;
         padding: 0 100px;
     }
 
@@ -53,4 +42,17 @@
     background-color: #8450e0;
     color: white;
     rotate: -5deg;
+}
+
+@media (max-width: 992px) {
+    .heroCTA {
+        .textoHeroCTA {
+            font-size: 24pt;
+        }
+        
+        .descricaoCTA {
+            padding: 0;
+            font-size: 12pt;
+        }
+    }
 }

@@ -21,6 +21,8 @@ export default function SobreMim() {
 
             <div className={styles.quemSouEu}>
 
+                <h2>Quem sou eu?</h2>
+
                 <p>
                     Olá! Meu nome é Igor Trindade e sou um desenvolvedor front-end que reside em Florianópolis/SC. Como programador freelancer há mais de um ano, tenho tido a oportunidade de trabalhar em uma variedade de projetos, desde pequenos sites a aplicativos web complexos. 
                 </p>
@@ -31,15 +33,9 @@ export default function SobreMim() {
 
                 <p>
                    Além disso, tenho um forte senso de ética profissional e sou comprometido em fornecer aos meus clientes um trabalho de alta qualidade e dentro do prazo. Se você está procurando um desenvolvedor front-end experiente e dedicado que pode ajudar a criar soluções visualmente impressionantes e funcionais, estou pronto para trabalhar com você. Entre em contato comigo para discutir como podemos colaborar em seu próximo projeto. Obrigado!
-
                 </p>
-
-                {/* <p>
-                </p> */}
-
-            </div>
-
-            {/* <div className={styles.minhasHabilidades}>
+{/* 
+                <div className={styles.minhasHabilidades}>
 
                     <h3 className={styles.skillIcon}><FaHtml5 /> </h3> 
                     <h3 className={styles.skillIcon}><FaCss3Alt /> </h3>
@@ -52,7 +48,11 @@ export default function SobreMim() {
                     <h3 className={styles.skillIcon}><FiFigma /> </h3>  
                     <h3 className={styles.skillIcon}><SiAdobephotoshop /> </h3>  
 
-            </div> */}
+                </div> */}
+
+
+            </div>
+
             
         </section>
     )
