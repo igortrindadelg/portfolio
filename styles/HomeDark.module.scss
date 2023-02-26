@@ -1,15 +1,10 @@
 @import 'colors.scss';
 
 .homeContainer, .sobreMimContainer {
-    background-color: $secondary-color;
-    color: $text-color;
-    padding: 0 128px;
-    margin: 0 6px;
-}
-
-.homeContainerDark, .sobreMimContainerDark {
     background-color: $secondary-color-dark;
     color: $text-color-dark;
+    padding: 0 128px;
+    margin: 0 6px;
 }
 
 @media (max-width: 992px) {

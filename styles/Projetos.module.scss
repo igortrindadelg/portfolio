@@ -1,0 +1,33 @@
+.projetosContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+    padding-top: 30px;
+
+    .projeto {
+        opacity: 0;
+        animation: aparecer 1s forwards;
+        min-height: 50vh;
+        width: 100%;
+        background-color: black;
+    }
+}
+
+@media (max-width: 992px) {
+    .projetosContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@keyframes aparecer {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

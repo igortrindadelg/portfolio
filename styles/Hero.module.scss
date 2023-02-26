@@ -1,5 +1,6 @@
 .heroContainer {
     min-height: 100vh;
+    min-height: 100svh;
     max-width: 100%;
     display: grid;
     align-content: center;
@@ -8,6 +9,10 @@
 }
 
 .heroCTA {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
     .textoHeroCTA {
         font-size: 36pt;
         margin: 12px 0;
@@ -25,34 +30,40 @@
         animation: aparecer 1s forwards 0.5s;
     }
 
-    display: grid;
-    align-content: center;
-    justify-items: center;
+    .socialButtonsContainer {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 10px;
+        justify-content: flex-start;
+        opacity: 0;
+        transform: translateY(-50px);
+        animation: aparecer2 1s forwards 0.75s;
+    }
+    
+    .socialButtons {
+        border: 2px solid #8450e0;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 0.5s ease-in;
+    }
+    
+    .socialButtons:hover {
+        border: 2px solid #8450e0;
+        background-color: #8450e0;
+        color: white;
+        rotate: -5deg;
+    }
+
+    .arraste {
+        position: absolute;
+        bottom: 24px;
+        font-size: 1.6rem;
+        color: #8450e0;
+        animation: flecha 1s infinite;
+    }
 }
 
-.socialButtonsContainer {
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 10px;
-    justify-content: flex-start;
-    opacity: 0;
-    transform: translateY(-50px);
-    animation: aparecer2 1s forwards 0.75s;
-}
 
-.socialButtons {
-    border: 2px solid #8450e0;
-    padding: 10px 20px;
-    border-radius: 10px;
-    transition: all 0.5s ease-in;
-}
-
-.socialButtons:hover {
-    border: 2px solid #8450e0;
-    background-color: #8450e0;
-    color: white;
-    rotate: -5deg;
-}
 
 @media (max-width: 992px) {
     .heroCTA {
@@ -86,5 +97,17 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes flecha {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
     }
   }

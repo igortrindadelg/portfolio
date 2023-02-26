@@ -1,7 +1,7 @@
 import styles from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '../public/assets/logo6.png'
+import logo from '../public/assets/logoBranco.png'
 
 export default function Navbar() {
     return (

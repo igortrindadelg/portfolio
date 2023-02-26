@@ -3,9 +3,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import heroImagem from '../public/assets/imagem-igor.jpg'
 import ImagemCirculo from './ImagemCirculo'
+import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
 
 export default function Hero() {
-
     return (
         <section className={styles.heroContainer}>
 
@@ -32,6 +32,8 @@ export default function Hero() {
                     className={styles.socialButtons}
                     href='#'>WhattsApp</Link>
                 </ul>
+
+                <p className={styles.arraste}><HiOutlineChevronDoubleDown /></p>
 
             </div>
 
