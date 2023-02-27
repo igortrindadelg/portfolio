@@ -18,7 +18,7 @@
 
 .logo {
     height: 40px;
-    width: 100%;
+    width: 160px;
     cursor: pointer;
 }
 
@@ -48,7 +48,7 @@
     rotate: -5deg;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) {    
     .navbar {
         grid-template-columns: auto auto;
         justify-content: space-between;

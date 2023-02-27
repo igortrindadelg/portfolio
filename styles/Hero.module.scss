@@ -1,16 +1,17 @@
+@import 'colors.scss';
+
 .heroContainer {
     min-height: 100vh;
     min-height: 100svh;
     max-width: 100%;
     display: grid;
-    align-content: center;
-    justify-items: center;
     text-align: center;
+    justify-items: center;
+    align-content: center;
 }
 
 .heroCTA {
     display: grid;
-    align-content: center;
     justify-items: center;
 
     .textoHeroCTA {
@@ -53,14 +54,14 @@
         color: white;
         rotate: -5deg;
     }
+}
 
-    .arraste {
-        position: absolute;
-        bottom: 24px;
-        font-size: 1.6rem;
-        color: #8450e0;
-        animation: flecha 1s infinite;
-    }
+.arraste {
+    position: absolute;
+    bottom: 24px;
+    font-size: 1.6rem;
+    color: $primary-color;
+    animation: flecha 1s infinite;
 }
 
 
@@ -110,4 +111,4 @@
     100% {
         transform: translateY(-10px);
     }
-  }
+}

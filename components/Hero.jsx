@@ -31,11 +31,12 @@ export default function Hero() {
                     <Link
                     className={styles.socialButtons}
                     href='#'>WhattsApp</Link>
-                </ul>
-
+                </ul>       
+                
                 <p className={styles.arraste}><HiOutlineChevronDoubleDown /></p>
-
+      
             </div>
+
 
         </section>
     )
