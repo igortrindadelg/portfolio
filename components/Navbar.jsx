@@ -2,6 +2,7 @@ import styles from '../styles/Navbar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../public/assets/logo.png'
+import { BiMenu } from 'react-icons/bi'
 
 export default function Navbar() {
     return (
@@ -23,7 +24,10 @@ export default function Navbar() {
                     <Link href='#'>Contato</Link>
                 </li>
             </ul>
-            
+
+            <button aria-label="Abrir menu" className={styles.iconMenu}>
+                <BiMenu />
+            </button>
         </nav>
     )
 }
