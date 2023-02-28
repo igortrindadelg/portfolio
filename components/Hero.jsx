@@ -8,10 +8,9 @@ import { HiOutlineChevronDoubleDown } from 'react-icons/hi'
 export default function Hero() {
     return (
         <section className={styles.heroContainer}>
-
-            <ImagemCirculo />
-
             <div className={styles.heroCTA}>
+                
+                <ImagemCirculo />
                 
                 <h1 className={styles.textoHeroCTA}>
                     Desenvolvedor Front-End e UI Designer
@@ -32,12 +31,14 @@ export default function Hero() {
                     className={styles.socialButtons}
                     href='#'>WhattsApp</Link>
                 </ul>       
-                
-                <p className={styles.arraste}><HiOutlineChevronDoubleDown /></p>
       
             </div>
 
+            {/* <div className={styles.arrasteContainer}>
+                <p className={styles.arraste}><HiOutlineChevronDoubleDown /></p>
+            </div> */}
 
+            
         </section>
     )
 }

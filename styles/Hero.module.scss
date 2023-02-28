@@ -8,6 +8,7 @@
     text-align: center;
     justify-items: center;
     align-content: center;
+    display: grid;
 }
 
 .heroCTA {
@@ -56,15 +57,16 @@
     }
 }
 
-.arraste {
+.arrasteContainer {
     position: absolute;
     bottom: 24px;
+}
+
+.arraste {
     font-size: 1.6rem;
     color: $primary-color;
     animation: flecha 1s infinite;
 }
-
-
 
 @media (max-width: 992px) {
     .heroCTA {
@@ -76,6 +78,14 @@
             padding: 0;
             font-size: 12pt;
         }
+    }
+
+    .arrasteContainer {
+        position: relative;
+    }
+
+    .arraste {
+        animation: flechaMobile 1s infinite;
     }
 }
 
@@ -101,14 +111,26 @@
     }
   }
 
-  @keyframes flecha {
+@keyframes flecha {
     0% {
         transform: translateY(-10px);
     }
     50% {
-        transform: translateY(0);
+        transform: translateY(0px);
     }
     100% {
         transform: translateY(-10px);
+    }
+}
+
+  @keyframes flechaMobile {
+    0% {
+        transform: translateY(50px);
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(50px);
     }
 }
