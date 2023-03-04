@@ -9,8 +9,9 @@ import { HiOutlineChevronDoubleDown } from "react-icons/hi";
 export default function Home() {
   return (
     <div className={styles.containerPrincipal}>
+      <Navbar />
+
       <div className={styles.homeContainer}>
-        <Navbar />
         <Hero />
 
         <div className={styles.arrasteContainer}>
