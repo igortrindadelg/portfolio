@@ -40,8 +40,8 @@
   top: 60px;
   right: 0;
   left: 0;
-  min-height: calc(100vh - 60px);
-  min-height: calc(100svh - 60px);
+  min-height: 100svh;
+  min-height: 100svh;
   width: 100%;
   grid-auto-flow: row;
   justify-content: center;
