@@ -1,22 +1,24 @@
 @import "colors.scss";
 
 .navbar {
-  background-color: $secondary-color;
+  background-color: $primary-color;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   right: 0;
-  padding: 0 128px;
-  margin: 0 6px;
+  padding: 0 18px;
+  // margin: 0 6px;
   border-top: 6px solid $primary-color;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
   grid-template-rows: 60px;
   align-items: center;
 }
 
 .logo {
+  z-index: 1;
   height: 40px;
   width: 160px;
   cursor: pointer;
@@ -28,40 +30,30 @@
 }
 
 .menuLista {
+  background-color: $primary-color;
   display: grid;
-  grid-auto-flow: column;
-  justify-content: flex-end;
+  position: absolute;
+  top: 60px;
+  min-height: 100svh;
+  width: 100%;
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
   grid-gap: 0 1rem;
   font-size: 14pt;
 }
 
 .iconMenu {
-  display: none;
+  display: grid;
   font-size: 2.5rem;
-  color: $primary-color;
+  color: $secondary-color;
   cursor: pointer;
   border: none;
-  background-color: $secondary-color;
+  background-color: $primary-color;
 }
 
 .menuLinks:hover {
   background-color: $primary-color;
   rotate: -5deg;
-}
-
-@media (max-width: 992px) {
-  .navbar {
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    padding: 0 12px;
-  }
-
-  .menuLista {
-    display: none;
-  }
-
-  .iconMenu {
-    display: grid;
-    justify-content: end;
-  }
 }
