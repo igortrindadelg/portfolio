@@ -33,6 +33,7 @@
   justify-content: flex-end;
   grid-gap: 0 1rem;
   font-size: 14pt;
+  transition: all 1s ease-in-out;
 }
 
 .iconMenu {
@@ -40,13 +41,18 @@
   font-size: 2.5rem;
   color: $primary-color;
   cursor: pointer;
+  background-color: transparent;
   border: none;
-  background-color: $secondary-color;
 }
 
-.menuLinks:hover {
-  background-color: $primary-color;
-  rotate: -5deg;
+.iconFechar {
+  display: grid;
+  z-index: 2;
+  font-size: 2.8rem;
+  color: $secondary-color;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 @media (max-width: 992px) {
@@ -57,11 +63,78 @@
   }
 
   .menuLista {
-    display: none;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+    background-color: $primary-color;
+    color: $secondary-color;
+    font-size: 1.6rem;
+    display: grid;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    grid-gap: 5vh;
   }
 
   .iconMenu {
     display: grid;
     justify-content: end;
+    z-index: 3;
+  }
+
+  .menuListaActive {
+    opacity: 1;
+    transform: translateX(0);
+
+    .menuLinks {
+      animation: aparecer 1s ease forwards;
+      opacity: 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid transparent;
+      transition: all 1s ease-in-out;
+    }
+
+    .menuLinks:hover {
+      border-bottom: 2px solid $secondary-color;
+    }
+
+    .menuLinks:nth-child(1) {
+      animation-delay: 0.75s;
+    }
+
+    .menuLinks:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    .menuLinks:nth-child(3) {
+      animation-delay: 1.25s;
+    }
+
+    .menuLinks:nth-child(4) {
+      animation-delay: 1.5s;
+      border: 2px solid $secondary-color;
+      border-radius: 10px;
+      padding: 5px 20px;
+    }
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
