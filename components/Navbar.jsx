@@ -4,7 +4,7 @@ import Image from "next/image";
 import logo from "../public/assets/logo.png";
 import logoBranco from "../public/assets/logoBranco.png";
 import { BiMenu, BiX } from "react-icons/bi";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [menuActive, setMenuActive] = useState(false);

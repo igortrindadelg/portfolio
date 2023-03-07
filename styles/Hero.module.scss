@@ -16,8 +16,11 @@
   justify-items: center;
 
   .textoHeroCTA {
-    font-size: 36pt;
     margin: 12px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 28pt;
     opacity: 0;
     transform: translateY(-50px);
     animation: aparecer 1s forwards 0.25s;
