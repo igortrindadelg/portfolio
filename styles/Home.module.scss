@@ -1,57 +1,59 @@
-@import 'colors.scss';
+@import "colors.scss";
 
-.homeContainer, .sobreMimContainer {
-    background-color: $secondary-color;
-    color: $text-color;
-    padding: 0 128px;
-    margin: 0 6px;
+.homeContainer,
+.sobreMimContainer {
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 0 128px;
+  // margin: 0 6px;
 }
 
 .arrasteContainer {
-    height: 0;
-    display: grid;
-    justify-items: center;
+  height: 0;
+  display: grid;
+  justify-items: center;
 }
 
 .arraste {
-    position: absolute;
-    bottom: 24px;
-    font-size: 1.6rem;
-    color: $primary-color;
-    animation: flecha 1s infinite;
+  position: absolute;
+  bottom: 24px;
+  font-size: 1.6rem;
+  color: $primary-color;
+  animation: flecha 1s infinite;
 }
 
 @media (max-width: 992px) {
-    .homeContainer, .sobreMimContainer {
-        padding: 0 12px;
-    }
+  .homeContainer,
+  .sobreMimContainer {
+    padding: 0 12px;
+  }
 
-    .arraste {
-        position: relative;
-        animation: flechaMobile 1s infinite;
-    }
+  .arraste {
+    position: relative;
+    animation: flechaMobile 1s infinite;
+  }
 }
 
 @keyframes flecha {
-    0% {
-        transform: translateY(-10px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
+  0% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes flechaMobile {
-    0% {
-        transform: translateY(-40px);
-    }
-    50% {
-        transform: translateY(-30px);
-    }
-    100% {
-        transform: translateY(-40px);
-    }
+  0% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
 }
