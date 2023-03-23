@@ -37,6 +37,11 @@
     color: $primary-color;
   }
 
+  h2:nth-child(2) {
+    background-color: red;
+    text-align: right;
+  }
+
   p {
     margin-bottom: 24px;
     font-size: 14pt;

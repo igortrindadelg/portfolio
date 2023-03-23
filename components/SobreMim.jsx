@@ -45,7 +45,7 @@ export default function SobreMim() {
           comigo para discutir como podemos colaborar em seu próximo projeto.
           Obrigado!
         </p> */}
-        {/* <h2>Minhas Habilidades</h2> */}
+        <h2>Minhas Habilidades</h2>
         <div className={styles.minhasHabilidades}>
           <h3 className={styles.skillIcon}>
             <FaHtml5 />{" "}
