@@ -69,6 +69,7 @@
 }
 
 .heroImagemContainer {
+  width: 100%;
   display: grid;
   justify-items: end;
   animation: aparecer2 1s forwards;
@@ -76,10 +77,8 @@
 }
 
 .heroImagem {
-  // margin-top: 60px;
-  border-radius: 10px;
-  max-width: 70%;
-  height: auto;
+  max-width: 432px;
+  max-height: 540px;
 }
 
 .arrasteContainer {

@@ -24,8 +24,8 @@ export default function Home() {
       <TextoDeslizante />
 
       <div id="sobreMim" className={styles.homeContainer}>
-        <Projetos />
         <SobreMim />
+        <Projetos />
       </div>
     </div>
   );

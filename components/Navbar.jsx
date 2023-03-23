@@ -15,11 +15,14 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Image
+      <div
         className={styles.logo}
-        src={logoBranco}
-        alt="Logo - Igor Trindade"
-      />
+        // src={logoBranco}
+        // alt="Logo - Igor Trindade"
+      >
+        <span className={styles.circuloLogo}>{`< it />`} </span>
+        {/* <p>IGOR TRINDADE</p> */}
+      </div>
 
       <ul
         className={`${styles.menuLista} ${

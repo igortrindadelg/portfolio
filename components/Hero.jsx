@@ -2,7 +2,7 @@ import styles from "../styles/Hero.module.scss";
 import Link from "next/link";
 import ImagemCirculo from "./ImagemCirculo";
 import Image from "next/image";
-import heroImagem from "../public/assets/imagem-igor.jpg";
+import heroImagem from "../public/assets/imagem-igor2.png";
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
 import TextoDeslizante from "./TextoDeslizante.jsx";
 
@@ -14,16 +14,15 @@ export default function Hero() {
 
         <h1 className={styles.textoHeroCTA}>
           Olá, sou
-          <span className={styles.apresentacao}> Igor Trindade</span>
+          <span className={styles.apresentacao}> Igor Trindade ✌</span>
           <br />
           Desenvolvedor Front-End
         </h1>
 
         <p className={styles.descricaoCTA}>
           Sou apaixonado em transformar ideias em experiências digitais
-          incríveis. <br />
-          Entre em contato para saber como posso ajudar a transformar sua visão
-          em realidade! &#128071;
+          incríveis. Entre em contato para saber como posso ajudar a transformar
+          sua visão em realidade! &#128071;
         </p>
 
         <ul className={styles.socialButtonsContainer}>
