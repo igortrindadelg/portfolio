@@ -15,7 +15,11 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <Image className={styles.logo} src={logo} alt="Logo - Igor Trindade" />
+      <Image
+        className={styles.logo}
+        src={logoBranco}
+        alt="Logo - Igor Trindade"
+      />
 
       <ul
         className={`${styles.menuLista} ${

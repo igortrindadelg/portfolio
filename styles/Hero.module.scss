@@ -22,13 +22,9 @@
       color: $primary-color;
     }
 
-    .estrela {
-      font-size: 40pt;
-    }
-
-    line-height: 1.1;
-    margin: 6px 0;
-    font-size: 48pt;
+    line-height: 1.2;
+    margin-bottom: 18px;
+    font-size: 42pt;
     font-weight: 400;
     opacity: 0;
     transform: translateY(-50px);
@@ -38,6 +34,7 @@
   .descricaoCTA {
     font-size: 14pt;
     margin-bottom: 18px;
+    margin-right: 18px;
     opacity: 0;
     transform: translateY(-50px);
     animation: aparecer 1s forwards 0.5s;
@@ -160,5 +157,14 @@
   }
   100% {
     transform: translateY(50px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

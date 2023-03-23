@@ -1,40 +1,40 @@
+@import "./colors.scss";
+
 .TextoDeslizanteContainer {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .scrollText {
-    width: calc(100% + 400px);
-    left: -400px;
-    display: flex;
-    background-color: #131313;
-    color: white;
-    padding: 20px 0;
-    font-size: 14pt;
+  width: calc(100% + 400px);
+  left: -400px;
+  display: flex;
+  background-color: $primary-color;
+  color: $text-color-dark;
+  padding: 20px 0;
+  font-size: 14pt;
 
-    h4 {
-        margin-right: 16px;
-        font-weight: 400;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        white-space: nowrap;
-        animation: animate 90s linear infinite;
-    }
+  h4 {
+    margin-right: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    white-space: nowrap;
+    animation: animate 90s linear infinite;
+  }
 }
 
 @keyframes animate {
-    0% 
-    {
-        transform: translateX(1%);
-    }
-   
-    100%
-    {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(1%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @media (max-width: 992px) {
-    .scrollText {
-        font-size: 12pt;
-    }
+  .scrollText {
+    font-size: 12pt;
+  }
 }

@@ -4,6 +4,7 @@ import ImagemCirculo from "./ImagemCirculo";
 import Image from "next/image";
 import heroImagem from "../public/assets/imagem-igor.jpg";
 import { BsLinkedin, BsGithub, BsWhatsapp } from "react-icons/bs";
+import TextoDeslizante from "./TextoDeslizante.jsx";
 
 export default function Hero() {
   return (

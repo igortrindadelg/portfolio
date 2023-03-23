@@ -1,7 +1,8 @@
 @import "colors.scss";
 
 .navbar {
-  background-color: $secondary-color;
+  background-color: $secondary-color-dark;
+  color: $text-color-dark;
   position: fixed;
   z-index: 1;
   top: 0;

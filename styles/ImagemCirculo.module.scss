@@ -1,3 +1,5 @@
+@import "./colors.scss";
+
 .textoCircular {
   position: relative;
   width: 200px;
@@ -6,7 +8,6 @@
   align-items: center;
   place-items: center;
   border-radius: 50%;
-  background-color: #131313;
   opacity: 0;
   transform: translateY(-50px);
   animation: aparecer 1s forwards;
@@ -56,23 +57,5 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-
-@keyframes bounce {
-  0% {
-    top: 0;
-  }
-  25% {
-    top: -10px;
-  }
-  50% {
-    top: 0;
-  }
-  75% {
-    top: -5px;
-  }
-  100% {
-    top: 0;
   }
 }
