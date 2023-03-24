@@ -46,30 +46,39 @@ export default function SobreMim() {
           Obrigado!
         </p> */}
         <h2>Minhas Habilidades</h2>
+
         <div className={styles.minhasHabilidades}>
           <h3 className={styles.skillIcon}>
-            <FaHtml5 />{" "}
+            <FaHtml5 />
+            HTML5
           </h3>
           <h3 className={styles.skillIcon}>
-            <FaCss3Alt />{" "}
+            <FaCss3Alt />
+            CSS3
           </h3>
           <h3 className={styles.skillIcon}>
-            <SiJavascript />{" "}
+            <SiJavascript />
+            JavaScript
           </h3>
           <h3 className={styles.skillIcon}>
-            <FaReact />{" "}
+            <FaReact />
+            React
           </h3>
           <h3 className={styles.skillIcon}>
-            <SiNextdotjs />{" "}
+            <SiNextdotjs />
+            Next.js
           </h3>
           <h3 className={styles.skillIcon}>
-            <FaNodeJs />{" "}
+            <FaNodeJs />
+            Node.js
           </h3>
           <h3 className={styles.skillIcon}>
-            <FaGitAlt />{" "}
+            <FaGitAlt />
+            Git
           </h3>
           <h3 className={styles.skillIcon}>
-            <FaGithub />{" "}
+            <FaGithub />
+            Github
           </h3>
           {/* <h3 className={styles.skillIcon}>
             <FiFigma />{" "}
