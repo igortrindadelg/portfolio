@@ -2,8 +2,7 @@ import { useState } from "react";
 import styles from "../styles/ImagemCirculo.module.scss";
 
 export default function ImagemCirculo() {
-  const texto = `Igor Trindade - Desenvolvedor de Front-End -`;
-
+  const texto = `- Entre em contato - Envie sua mensagem aqui`;
   return (
     <div className={styles.textoCircular}>
       <div className={styles.meioTexto}></div>

@@ -4,7 +4,7 @@
   grid-template-columns: auto 1fr;
   grid-gap: 12px;
   padding-top: 32px;
-  //   min-height: calc(100svh - 80px);
+  // min-height: calc(100svh - 80px);
 }
 
 .heroImagemContainer {
@@ -50,17 +50,19 @@
 
 .minhasHabilidades {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-content: center;
-  text-align: center;
+  grid-template-columns: repeat(6, 1fr);
   grid-gap: 14px;
 }
 
 .skillIcon {
-  background-color: #343434;
+  display: grid;
+  place-items: center;
+  border: 2px solid $primary-color;
+  // background-color: $primary-color;
+  color: $primary-color;
   border-radius: 10px;
-  padding: 10px 0;
-  font-size: 18pt;
+  font-size: 40px;
+  padding: 10px;
 }
 
 @media (max-width: 992px) {

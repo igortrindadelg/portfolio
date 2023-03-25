@@ -5,6 +5,7 @@ import SobreMim from "../components/SobreMim";
 import TextoDeslizante from "../components/TextoDeslizante";
 import Projetos from "../components/Projetos";
 import { HiOutlineChevronDoubleDown } from "react-icons/hi";
+import FormularioContato from "../components/FormularioContato";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <div id="sobreMim" className={styles.homeContainer}>
         <SobreMim />
         <Projetos />
+        <FormularioContato />
       </div>
     </div>
   );

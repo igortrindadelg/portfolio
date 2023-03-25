@@ -13,29 +13,28 @@ import { SiJavascript, SiNextdotjs, SiAdobephotoshop } from "react-icons/si";
 import { FiFigma } from "react-icons/fi";
 
 export default function SobreMim() {
-  const texto = `Quem sou Eu? - Quem sou Eu? - Quem sou Eu? -`;
-
   return (
     <section className={styles.sobreMimContainer}>
       <div className={styles.heroImagemContainer}>
         <Image
           className={styles.heroImagem}
           src={heroImagem}
-          alt="Picture of the author"
+          alt="Foto de Igor Trindade"
         />
       </div>
 
       <div className={styles.quemSouEu}>
-        <h2>Quem sou eu?</h2>
+        <h2>Quem sou eu? 🌞</h2>
 
         <p>
           Olá! Meu nome é Igor Trindade e sou um desenvolvedor front-end de
-          Florianópolis/SC. Atuando como freelancer há dois anos, tive a
-          oportunidade de trabalhar em vários projetos, desde pequenos sites a
-          aplicativos web complexos. Minha especialidade é criar interfaces de
-          usuário atraentes e intuitivas. Sou apaixonado por aprender novas
-          tecnologias e estou sempre buscando expandir meu conhecimento em
-          programação e design.
+          Florianópolis/SC com dois anos de experiência atuando como freelancer.
+          Tive a oportunidade de trabalhar em vários projetos, desde pequenos
+          sites a aplicativos web complexos. Minha especialidade é desenvolver
+          interfaces de usuário atraentes, funcionais e intuitivas. Sou
+          apaixonado em aprender novas tecnologias e estou sempre buscando
+          expandir meu conhecimento em programação e design. Essas são algumas
+          das minhas principais habilidades técnicas 👇
         </p>
 
         {/* <p>
@@ -45,48 +44,48 @@ export default function SobreMim() {
           comigo para discutir como podemos colaborar em seu próximo projeto.
           Obrigado!
         </p> */}
-        <h2>Minhas Habilidades</h2>
+        {/* <h2>Minhas Habilidades</h2> */}
 
-        <div className={styles.minhasHabilidades}>
-          <h3 className={styles.skillIcon}>
+        <ul className={styles.minhasHabilidades}>
+          <li className={styles.skillIcon}>
             <FaHtml5 />
-            HTML5
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>HTML5</p> */}
+          </li>
+          <ul className={styles.skillIcon}>
             <FaCss3Alt />
-            CSS3
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>CSS3</p> */}
+          </ul>
+          <li className={styles.skillIcon}>
             <SiJavascript />
-            JavaScript
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>JavaScript</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <FaReact />
-            React
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>React</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <SiNextdotjs />
-            Next.js
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>Next.js</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <FaNodeJs />
-            Node.js
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>Node.js</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <FaGitAlt />
-            Git
-          </h3>
-          <h3 className={styles.skillIcon}>
+            {/* <p>Git</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <FaGithub />
-            Github
-          </h3>
-          {/* <h3 className={styles.skillIcon}>
+            {/* <p>GitHub</p> */}
+          </li>
+          <li className={styles.skillIcon}>
             <FiFigma />{" "}
-          </h3>
-          <h3 className={styles.skillIcon}>
+          </li>
+          <li className={styles.skillIcon}>
             <SiAdobephotoshop />{" "}
-          </h3> */}
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
   );

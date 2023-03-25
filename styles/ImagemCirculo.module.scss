@@ -2,8 +2,8 @@
 
 .textoCircular {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   display: grid;
   align-items: center;
   place-items: center;
@@ -16,8 +16,8 @@
 
   .meioTexto {
     position: absolute;
-    width: 145px;
-    height: 145px;
+    width: 240px;
+    height: 240px;
     border-radius: 50%;
     background-image: url("../public/assets/foto-perfil.png");
     background-size: cover;
@@ -35,7 +35,7 @@
       position: absolute;
       left: 50%;
       font-size: 1.2rem;
-      transform-origin: 0 100px;
+      transform-origin: 0 150px;
     }
   }
 }
