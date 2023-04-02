@@ -6,6 +6,7 @@
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: "hero imagem";
   text-align: center;
   justify-items: center;
   align-content: center;
@@ -13,6 +14,7 @@
 }
 
 .heroCTA {
+  grid-area: hero;
   display: grid;
   align-content: center;
   text-align: left;
@@ -77,6 +79,7 @@
 }
 
 .heroImagem {
+  grid-area: imagem;
   max-width: 432px;
   max-height: 540px;
 }
@@ -93,9 +96,28 @@
 }
 
 @media (max-width: 992px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+      "imagem"
+      "hero";
+  }
+
+  .heroImagemContainer {
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .heroImagem {
+    width: 80%;
+    height: auto;
+  }
+
   .heroCTA {
     .textoHeroCTA {
       font-size: 24pt;
+      text-align: center;
     }
 
     .descricaoCTA {
